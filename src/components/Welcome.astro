@@ -2,67 +2,10 @@
 import thinktapfastLogo from "../assets/logo.png";
 ---
 
-<div class="ttf-simple">
-  <main>
-    <img class="logo" src={thinktapfastLogo.src} alt="ThinkTapFast logo" />
-    <h1>ThinkTapFast</h1>
-    <p class="tagline">AI for text, images & voice — Think. Tap. Fast.</p>
+<div class="min-h-screen flex items-center justify-center bg-black px-6 py-10">
+  <main class="text-center text-white max-w-3xl px-6">
+    <img class="w-20 mx-auto rounded-md p-1 bg-white/5 shadow-lg" src={thinktapfastLogo.src} alt="ThinkTapFast logo" />
+    <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-[ #F6F930 ]">ThinkTapFast</h1>
+    <p class="mt-3 text-lg text-white/90 max-w-xl mx-auto">AI for text, images & voice — <span class="font-semibold">Think. Tap. Fast.</span></p>
   </main>
 </div>
-
-<style>
-  .ttf-simple {
-    /* Prefer the newer svh unit for mobile browsers, fallback to 100vh */
-    min-height: 100svh;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000000;
-    font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
-    padding: 2rem;
-  }
-  /* make sizing predictable and avoid overflow issues */
-  .ttf-simple,
-  .ttf-simple * {
-    box-sizing: border-box;
-  }
-  main {
-    text-align: center;
-    color: #ffffff;
-    padding: 2rem 1.25rem;
-    max-width: 720px;
-  }
-  h1 {
-    margin: 0;
-    font-size: 2.25rem;
-    font-weight: 800;
-    color: #f6f930; /* brand yellow */
-    letter-spacing: -0.02em;
-  }
-  .tagline {
-    margin-top: 0.6rem;
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 1.05rem;
-    max-width: 36rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .logo {
-    display: block;
-    width: 84px;
-    height: auto;
-    margin: 0 auto 1rem;
-    border-radius: 8px;
-    padding: 6px;
-  }
-
-  @media (max-width: 520px) {
-    h1 {
-      font-size: 1.6rem;
-    }
-    .tagline {
-      font-size: 0.95rem;
-    }
-  }
-</style>
